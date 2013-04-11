@@ -27,4 +27,15 @@
 
 </div>
 
+{% else %}
+
+<div id="sidebar" class="sidebar">
+  <h4>{{ page.categories }}</h4>
+  <ul>
+    {% assign category = page.categories | first %}
+    {% assign pages_list = site.categories[category] %}
+    {% include JB/pages_list_reversed %}
+  </ul>
+</div>
+
 {% endif %}
