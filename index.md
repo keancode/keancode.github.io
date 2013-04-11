@@ -1,0 +1,6 @@
+---
+layout: page
+title: /!\ caution: KeanCode is under migration.
+---
+
+ยินดีต้อนรับสู่ KeanCode /เขียนโค้ด/ หรือที่รู้จักกันในชื่อเดิมคือ Tutor0x กับหน้าเว็บใหม่ครับ
