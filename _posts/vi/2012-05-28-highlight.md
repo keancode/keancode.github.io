@@ -7,12 +7,14 @@ category: vi
 
     :setf python [Enter]
 
-เพื่อเปลี่ยนการ highlight จากภาษา C ไปเป็นภาษา Python ได้
+เพื่อเปลี่ยนการ highlight จากภาษา C (โดย default) ไปเป็นภาษา Python ได้
 
+{% highlight python %}
     #include<stdio.h> /*
-                         print('hello world!'); ''' */
+    print('hello world!'); ''' */
     int main(void) { printf("hello world!\n"); return 0; }
     /* ''' # */
+{% endhighlight %}
 
 แต่การสั่งตามข้างบนนี้ จะมีผลเพียงแค่การแก้ไขเอกสารครั้งนั้นๆ ถ้าต้องการให้มีผลไปตลอด ให้เปิดไฟล์ `.vimrc` มาแล้วเพิ่มบรรทัดนี้เข้าไป
 
