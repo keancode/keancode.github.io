@@ -1,0 +1,1 @@
+{% for author_obj in site.author %}{% assign author = author_obj | last %}{% if author.twitter %}<a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
