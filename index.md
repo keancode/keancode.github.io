@@ -7,8 +7,12 @@ title: "/ ! \\ caution: KeanCode is under migration."
 
 สารบัญหน้าเพจ
 
+{% assign interesting = 'lets-code vi' | split: ' ' %}
+{% for category in interesting %}
+<h4>{{ category }}</h4>
 <ul>
-{% assign pages_list = site.categories["lets-code"] %}
-{% include JB/pages_list %}
+  {% assign pages_list = site.categories[category] %}
+  {% include JB/pages_list_reversed %}
 </ul>
+{% endfor %}
 
