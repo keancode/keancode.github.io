@@ -9,7 +9,7 @@ title: "/ ! \\ caution: KeanCode is under migration."
 
 <div class="row-fluid">
   <div class="span3">
-    {% assign interesting = 'announcement misc lets-code html' | split: ' ' %}
+    {% assign interesting = 'announcement misc lets-code haskell html' | split: ' ' %}
     {% for category in interesting %}
     <h4>{{ category }}</h4>
     <ul>
