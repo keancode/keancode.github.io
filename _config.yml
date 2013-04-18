@@ -13,6 +13,9 @@ topbar:
   - 
     url : '/developers/index.html'
     title : 'Developers'
+  - 
+    url : '/how-to-join/index.html'
+    title : 'How to Join'
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
