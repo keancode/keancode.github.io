@@ -1,6 +1,7 @@
 ---
 layout: post
 category: misc
+author: neizod
 ---
 {% include JB/setup %}
 
