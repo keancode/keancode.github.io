@@ -3,6 +3,7 @@ layout: post
 category: haskell
 author: neizod
 ---
+{% include JB/setup %}
 
 การประกาศ `List` นอกจากจะทำได้ตามวิธีปรกติแล้ว Haskell ยังทำท่านี้ได้อีกด้วย
 

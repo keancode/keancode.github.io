@@ -3,6 +3,7 @@ layout: post
 category: haskell
 author: neizod
 ---
+{% include JB/setup %}
 
 นอกจากเราจะสร้างฟังก์ชันด้วย if-else แล้ว Haskell ยังมีความสามารถในการทำ pattern matching กับตัวแปรฟังก์ชันได้อีกด้วย
 

@@ -3,6 +3,7 @@ layout: post
 category: haskell
 author: neizod
 ---
+{% include JB/setup %}
 
 ค่าความจริงใน Haskell มีเพียงแค่ `True` กับ `False` เท่านั้น (ไม่สามารถใช้ `0` หรือค่าว่างแบบอื่นๆ แทน `False` ได้)
 

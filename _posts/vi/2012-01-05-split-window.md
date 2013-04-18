@@ -2,6 +2,7 @@
 layout: post
 category: vi
 ---
+{% include JB/setup %}
 
 เราสามารถแบ่งหน้าจอการแสดงผล vi ได้โดยคำสั่งใน last line mode คือ
 

@@ -3,6 +3,7 @@ layout: post
 category: haskell
 author: neizod
 ---
+{% include JB/setup %}
 
 ตัวเลขใน Haskell ก็เหมือนภาษาอื่น ที่แบ่งออกหลักๆ เป็นจำนวนเต็มกับทศนิยม
 

@@ -4,6 +4,7 @@ category: lets-code
 author: neizod
 title: Interviewstreet
 ---
+{% include JB/setup %}
 
 [Interviewstreet](https://www.interviewstreet.com/challenges/) เป็นเว็บหางานสำหรับโปรแกรมเมอร์แนวใหม่ ที่ตัดสินคัดเลือกคนขั้นต้นด้วยการจัดให้เขียนโปรแกรมแข่งกันซะเลย (แล้วค่อยไปยื่น resume + สัมภาษณ์ทีหลัง) เพียงแค่ทำโจทย์ผ่าน 7 ข้อ ก็มีสิทธิยื่นใบสมัครกับบริษัทเช่น Facebook, Microsoft, Amazon.com, Dropbox ฯลฯ เรียกได้ว่า นอกจากจะได้ฝึกสมองแก้โจทย์แล้ว ยังมีโอกาสลุ้นไปทำงานกับบริษัทเหล่านี้อีกด้วย
 
