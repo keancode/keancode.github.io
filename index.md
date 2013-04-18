@@ -7,9 +7,9 @@ title: "/ ! \\ caution: KeanCode is under migration."
 
 สารบัญหน้าเพจ (ที่ย้ายมา *เกือบ* สำเร็จแล้ว)
 
-<div class="row">
+<div class="row-fluid">
   <div class="span3">
-    {% assign interesting = 'lets-code vi' | split: ' ' %}
+    {% assign interesting = 'misc lets-code vi' | split: ' ' %}
     {% for category in interesting %}
     <h4>{{ category }}</h4>
     <ul>
