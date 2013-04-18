@@ -9,7 +9,7 @@ title: "/ ! \\ caution: KeanCode is under migration."
 
 <div class="row-fluid">
   <div class="span3">
-    {% assign interesting = 'announcement misc lets-code haskell html' | split: ' ' %}
+    {% assign interesting = 'announcement misc lets-code haskell' | split: ' ' %}
     {% for category in interesting %}
     <h4>{{ category }}</h4>
     <ul>
@@ -30,6 +30,16 @@ title: "/ ! \\ caution: KeanCode is under migration."
   </div>
   <div class="span3 offset1">
     {% assign interesting = 'bash vi git' | split: ' ' %}
+    {% for category in interesting %}
+    <h4>{{ category }}</h4>
+    <ul>
+      {% assign pages_list = site.categories[category] %}
+      {% include JB/pages_list_reversed %}
+    </ul>
+    {% endfor %}
+  </div>
+  <div class="span3 offset1">
+    {% assign interesting = 'html sql' | split: ' ' %}
     {% for category in interesting %}
     <h4>{{ category }}</h4>
     <ul>
