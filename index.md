@@ -7,12 +7,25 @@ title: "/ ! \\ caution: KeanCode is under migration."
 
 สารบัญหน้าเพจ (ที่ย้ายมา *เกือบ* สำเร็จแล้ว)
 
-{% assign interesting = 'lets-code vi' | split: ' ' %}
-{% for category in interesting %}
-<h4>{{ category }}</h4>
-<ul>
-  {% assign pages_list = site.categories[category] %}
-  {% include JB/pages_list_reversed %}
-</ul>
-{% endfor %}
-
+<div class="row">
+  <div class="span3">
+    {% assign interesting = 'lets-code vi' | split: ' ' %}
+    {% for category in interesting %}
+    <h4>{{ category }}</h4>
+    <ul>
+      {% assign pages_list = site.categories[category] %}
+      {% include JB/pages_list_reversed %}
+    </ul>
+    {% endfor %}
+  </div>
+  <div class="span2 offset1">
+    {% assign interesting = 'python' | split: ' ' %}
+    {% for category in interesting %}
+    <h4>{{ category }}</h4>
+    <ul>
+      {% assign pages_list = site.categories[category] %}
+      {% include JB/pages_list_reversed %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>
