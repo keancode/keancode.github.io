@@ -39,7 +39,7 @@ title: "/ ! \\ caution: KeanCode is under migration."
     {% endfor %}
   </div>
   <div class="span3 offset1">
-    {% assign interesting = 'html sql' | split: ' ' %}
+    {% assign interesting = 'html sql php' | split: ' ' %}
     {% for category in interesting %}
     <h4>{{ category }}</h4>
     <ul>
