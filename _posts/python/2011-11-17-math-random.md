@@ -7,6 +7,7 @@ author: neizod
 
 นอกจากการคำนวณขั้นพื้นฐานที่ได้เขียนไปแล้ว Python ยังมีฟังก์ชันสำหรับการคำนวณติดมาอีกเล็กน้อยคือ
 
+```python
     print(round(10.5), round(10.51), round(-7.2))
     # get: 10, 11, -7
     print(abs(-9), abs(4.7), abs(10j))
@@ -19,20 +20,24 @@ author: neizod
 
     print(sum([0,1,2,3]))
     # get: 6
+```
 
 สงสัยฟังก์ชันไหน สามารถใช้ `help(func_name)` เพื่ออ่านข้อมูลเพิ่มเเติมได้ครับ
 
+```python
     help(abs)
     # Help on built-in function abs in module builtins:
     # abs(...)
     #     abs(number) -> number
     #    
     #    Return the absolute value of the argument.
+```
 
 ---
 
 ถ้านี่ไม่พอ ต้อง `import math` มาใช้ ซึ่งมีค่าคงตัว/ฟังก์ชันสำคัญๆ ดังนี้
 
+```python
     import math
 
     print(math.e)
@@ -54,6 +59,7 @@ author: neizod
     # get: 0.0
     print(math.cos(math.pi))
     # get: -1.0
+```
 
 ลงไว้ไม่หมดนะฮะ ดูเพิ่มเติมด้วย `help()` โลด
 
@@ -61,6 +67,7 @@ author: neizod
 
 นอกเหนือจากการคำนวณแล้ว การสุ่มยังแยกออกมาเป็นอีกโมดูลหนึ่งด้วย
 
+```python
     import random
 
     start, stop = 0, 5
@@ -81,5 +88,6 @@ author: neizod
     print(card)
     # get random card position
     # e.g. ['k','j','a','q']
+```
 
 ลงไว้ไม่หมดเช่นกันครับ

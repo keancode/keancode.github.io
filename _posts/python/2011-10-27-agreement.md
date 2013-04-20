@@ -7,10 +7,12 @@ author: neizod
 
 คอมเมนท์ใน Python ใช้เครื่องหมาย `#` นำหน้าข้อความที่จะคอมเมนท์จนจบบรรทัด (ไม่มีคอมเมนท์หลายบรรทัด)
 
+```python
     # this is a comment.
     x = 1 # this is also a comment.
     print("hello # world")
     # but this above sentence is not.
+```
 
 อย่างไรก็ตาม เครื่องหมาย `#` ที่ปรากฏอยู่ภายใต้เครื่องหมาย quote นั้น ไม่นับเป็นการคอมเมนท์ครับ
 
@@ -24,4 +26,6 @@ author: neizod
 
 แม้ว่า Python จะมี interpreter แถมมาให้ แต่การพิมพ์คำสั่งหลายๆ บรรทัดใน Python shell คงไม่เหมาะสมเท่าไหร่ (กลับไปแก้ไขบรรทัดก่อนๆ ไม่ได้) ดังนั้นเราจึงควรพิมพ์ script เก็บไว้ในไฟล์ แล้วเรียกทดลอง script ผ่าน terminal แบบนี้ครับ
 
+```python
     $ python3 scriptfile
+```

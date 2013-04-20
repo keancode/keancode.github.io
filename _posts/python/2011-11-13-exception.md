@@ -7,8 +7,10 @@ author: neizod
 
 จากหลายตอนที่ผ่านๆ มา ถ้าใคร code เอง คงผ่านตากับข้อความเตือน error อย่างเช่น
 
+```python
     IndentationError: unexpected indent
     SyntaxError: invalid syntax
+```
 
 พวกนี้ เป็นความผิดพลาดจากการพิมพ์ของเราเอง แก้ไขได้โดยการไปฝึก code เยอะๆ ซะ จะได้พิมพ์ผิดน้อยลง
 
@@ -16,16 +18,21 @@ author: neizod
 
 แต่ก็ยังมี error อีกประเภทที่อาจเกิดขึ้นได้แม้ว่าเราจะตรวจ syntax ว่าไม่มีที่ผิดแล้ว เช่น
 
+```python
     a = int(input('dividend: '))
     b = int(input('divisor: '))
     print(a/b)
+```
 
 ถ้าผู้ใช้ป้อนค่า 0 เข้ามาในครั้งที่สอง (ตัวแปร b) จะทำให้เกิด
 
+```python
     ZeroDivisionError: int division or modulo by zero
+```
 
 เพื่อแก้ไขให้ code นี้ใช้งานได้ เราอาจดักเช็คค่าของ b ง่ายๆ เช่น
 
+```python
     while True:
         a = int(input('dividend: '))
         b = int(input('divisor: '))
@@ -33,9 +40,11 @@ author: neizod
             break
 
     print(a/b)
+```
 
 ก็ได้ แต่ในโลกความเป็นจริงแล้ว ผู้ใช้ยังสามารถป้อนตัวอักษรเข้ามาได้อีก (ซึ่งมันไม่สามารถเอาไปคำนวณแบบตัวเลขได้) แม้ว่าเราอาจดักไม่ให้ผู้ใช้สามารถกดแป้นตัวอักษรได้ แต่นั่นก็อาจแลกมากับการที่ code หนักขึ้น (มี maintainability ลดลง) เราจึงอาจหันมาพึ่ง exception เช่นนี้ครับ
 
+```python
     while True:
         try:
             a = int(input('dividend: '))
@@ -47,9 +56,11 @@ author: neizod
             print("please input a number, try again.")
         except ZeroDivisionError:
             print("divisor can't be zero, try again.")
+```
 
 หรือ เพื่อให้ code สวยงามยิ่งขึ้น
 
+```python
     while True:
         try:
             # put code that can lead exception inside try.
@@ -67,21 +78,25 @@ author: neizod
         finally:
             # always done whether there are exception or not!
             print('--------------------')
+```
 
 ---
 
 นอกจากนี้ เรายังสามารถสั่งให้เกิด exception error จากคำสั่ง `raise` ได้อีกด้วย เช่น
 
+```python
     raise NameError("Don't Panic")
     # your program will show this:
     #   Traceback (most recent call last):
     #     File "<stdin>", line 1, in ?
     #   NameError: Don't Panic
+```
 
 ---
 
 สำหรับ exception ที่ควรรู้จัก คือ
 
+```python
     Exception    # prototype
 
     IOError      # no file to open
@@ -92,9 +107,11 @@ author: neizod
     TypeError    # operation on inappropriate type
 
     RuntimeError # not in other categories
+```
 
 หรือถ้าอยากสร้าง exception ไว้ใช้เอง ก็สามารถทำได้โดยสืบทอดจาก `Exception` เช่น
 
+```python
     class MyError(Exception):
          def __init__(self, value):
              '''init class with a value of exception'''
@@ -103,3 +120,4 @@ author: neizod
              '''exception description e.g.
              IamError: value'''
              return repr(self.value)
+```

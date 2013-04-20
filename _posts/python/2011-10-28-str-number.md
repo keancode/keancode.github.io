@@ -9,25 +9,31 @@ author: neizod
 
 การประกาศตัวแปร float ต่างจาก int นิดเดียวที่ต้องใส่จุดทศนิยมเข้าไปเท่านั้นแหละครับ ดังตัวอย่าง:
 
+```python
     a = 42
     b = 7427466391
     q = 4.
     p = 3.1416
+```
 
 นอกจากนี้ การประกาศตัวแปรใน Python ยังสามารถทำพร้อมกันหลายๆ ตัวได้ แบบนี้
 
+```python
     a, p = 42, 3.1416
+```
 
 ตัวเลขอีกแบบที่อาจจะไม่ค่อยได้เห็นกันซักเท่าไหร่ (ถ้าไม่ได้ทำงานสายคณิต/วิศวะ) คือจำนวณเชิงซ้อนครับ
 
 การประกาศตัวแปรก็ง่ายเหมือนกับการเขียนจำนวนเชิงซ้อนในกระดาษเลย คือเขียนส่วนจริงบวก/ลบส่วนจินตภาพ ทั้งนี้ [หน่วยจินตภาพ](http://en.wikipedia.org/wiki/Imaginary_unit)ใช้จะตัว j ตามแบบวิศวะ และต้องมีตัวเลขนำหน้า นะครับ
 
+```python
     c = 1+0j
     d = 5j
 
     x = 1.6180
     y = 2.7182
     z = x-y*1j
+```
 
 ---
 
@@ -35,19 +41,25 @@ author: neizod
 
 การประกาศ string ใน Python สามารถใช้เครื่องหมายได้ทั้ง ' (single quote) และ " (double quote) เลย ซึ่งมันไม่มีความแตกต่างด้าน performance เหมือน PHP ครับ
 
+```python
     hi = "greetin' from moon."
     yo = "おはようございます。"
     cx = 'i\'m not a "hero".'
+```
 
 และยังมีท่าประหลาดๆ ในการประกาศ string แบบนี้ด้วย
 
+```python
     us = 'you'      ' and me'     # return 'you and me'
+```
 
 นอกจากนี้ การประการ string ด้วย `'''` (3 single quote) และ `"""` (3 double quote) จะทำให้เราเขียน string หลายบรรทัดง่ายขึ้น เพราะมันจะแปลงเครื่องหมายขึ้นบรรทัดใหม่ให้เป็น \n โดยอัตโนมัติ
 
+```python
     document = '''you can ask any question to this amazing computer.
     please, except the meaning of life, universe, & everything. '''
     deepthought = """it's 42. end of story.
     bother me no more, i'm watching tv!"""
+```
 
 อย่างหนึ่งที่ต้องตระหนักคือ string ของ Python เป็น immutable คือสร้างแล้วไม่สามารถแก้ไขมันได้ครับ (แล้วเราจะมาดูเรื่องนี้กันอีกที)
