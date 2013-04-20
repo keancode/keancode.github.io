@@ -1,4 +1,3 @@
-
 can wait
 --------
 
@@ -8,15 +7,11 @@ can wait
 - rewrite README for own site
 - monitor out link to tt0x and replace it to inner link
 - monitor dead link
-- remove `Next Step` at end of post (from `_layout`)
 - create post template example for newbie
 - show author beautifuly (big pic, like wordpress?)
-- no author is
-    - python
-    - vi
 - markdown problems?
-    - table doesnt render code inside
-    - why link []() cant except `)` inside?
+    - table doesnt render code inside -> can be fix in css
+    - why link []() cant accept `)` inside?
 - style with css (js)
     - del first 4-spaces of pre-code
 
@@ -35,16 +30,19 @@ the content
 - haskell
     - sample the syntax highlight
 - html
+    - tree structure like in bash (`/html/link.html`)
     - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
     - omitted some tag but good at render: `<meta ... /><h1>hello world</h1>`
     - update those to use some modern tag: `<em>, <strong>, <span>`
-- shell
+- bash
+    - write something about posix
     - specific `%` for root prev
-    - $SHELL and $TERM
+    - `$SHELL` and `$TERM`
     - change `/home/username` to `/home/me` (and also add `/home/others`)
     - cd -, pushd, popd
 - python
+    - tree structure like in bash (`/html/module.html`)
     - mark no newline at EOF
     - add `help` to the very 1st page
     - rename `test` module in python/function.html

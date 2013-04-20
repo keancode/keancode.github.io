@@ -1,6 +1,7 @@
 ---
 layout: post
 category: python
+author: neizod
 ---
 {% include JB/setup %}
 

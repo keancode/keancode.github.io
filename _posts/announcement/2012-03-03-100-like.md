@@ -1,6 +1,7 @@
 ---
 layout: post
 category: announcement
+author: neizod
 ---
 {% include JB/setup %}
 
