@@ -2,6 +2,7 @@ can wait
 --------
 
 - author licening
+- beautiful 404
 - rm -rf _post/api _post/usage (and those relate w/ JB)
 - migrate to JB 0.3.0
 - rewrite README for own site
@@ -11,16 +12,18 @@ can wait
 - show author beautifuly (big pic, like wordpress?)
 - markdown problems?
     - table doesnt render code inside -> can be fix in css
-    - why link []() cant accept `)` inside?
-- style with css (js)
-    - del first 4-spaces of pre-code
+    - why link `[]()` cant accept `)` inside?
+- less requite `.js` files (merge them into single file)
+    - app.js (from JB)
+    - dedent.js
 
 the content
 -----------
 
 - how to
-    - markdown fenced code block w/ syntax highlighting
-    - never write `{{ ... }}` (double brace), use `{ { ... } }` otherwise. (conflict w/ liquid template).
+    - never write `{{ ... }}` (double brace), use `{ { ... } }` otherwise.
+        (conflict w/ liquid template).
+    - write how to dev w/ jekyll & liquid template
 - annoc
     - landing page
     - write migrate blog
@@ -57,6 +60,7 @@ the content
 - regex
     - rewrite it for full page / multi pages
 - misc
+    - landing page
     - change `usrname` to `username`
 
 
