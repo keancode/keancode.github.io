@@ -35,10 +35,10 @@ the content
 - haskell
     - sample the syntax highlight
 - html
-    - one tag need one space before end (xhtml spec): <div />
+    - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
-    - omitted some tag but good at render: <meta ... /><h1>hello world</h1>
-    - update those to use some modern tag: <em>, <strong>, <span>
+    - omitted some tag but good at render: `<meta ... /><h1>hello world</h1>`
+    - update those to use some modern tag: `<em>, <strong>, <span>`
 - shell
     - specific `%` for root prev
     - $SHELL and $TERM
