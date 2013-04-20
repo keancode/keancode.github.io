@@ -32,13 +32,13 @@ author: mementototem
         <input type="password" id="password" name="password" />
         <input type="submit" id="send" name="send" value="Login" />
     </form>
-{% endhighlight %}
+```
 
 ส่วนการนำค่ามาใช้งานนั้นจะใช้ผ่าน `$_GET` สำหรับ `get` และใช้ `$_POST` สำหรับ `post` ซึ่งเป็น [associative array](/php/array.html) มี key เป็น `name` ของ `<input>` อันนั้น ๆ 
 
 ทั้ง `$_GET` และ `$_POST` ถือเป็นตัวแปรแบบ superglobal ที่เรียกใช้ได้ทุกที่ตลอดเวลา แตกต่างจากตัวแปรแบบ global ตรงที่ไม่ต้องใส่ `global` นำก่อนจะใช้งาน
 
-{% highlight php %}
+```php
 <?php
 
     // file: bmi.php
@@ -65,7 +65,7 @@ author: mementototem
     } else {
         echo 'Invalid username or password or both';
     }
-{% endhighlight %}
+```
 
 นอกจากนี้ยังมี `$_REQUEST` ที่เก็บค่าทั้งของ `$_POST`, `$_GET` และ `$_COOKIE` ไว้ด้วยกัน แต่เสี่ยงที่จะถูกโจมตี จึงไม่แนะนำให้ใช้ 
 
