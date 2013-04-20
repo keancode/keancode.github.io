@@ -4,12 +4,6 @@
       <h1 class="title">{{ page.title }}</h1>
       {{ page.description }}
       {{ content }}
-    {% if page.previous and page.categories == page.previous.categories %}
-      <hr>
-      <div>
-        <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="btn btn-success btn-large">Next Step: {{ page.previous.title }} &rarr;</a>
-      </div>
-    {% endif %}
     </div>  
   </div>
   <div id="right-pane" class="span5">
