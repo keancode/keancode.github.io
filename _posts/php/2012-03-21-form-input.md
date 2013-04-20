@@ -14,6 +14,7 @@ author: mementototem
 
 จะส่งค่าแบบใดนั้น ขึ้นอยู่กับข้อมูลที่จะส่ง ถ้าไม่เป็นความลับ หรือต้องการให้มีการคัดลอก URL แล้วเอาไปใช้ได้โดยไม่จำเป็นต้องกรอกข้อมูลอีกก็ใช้ `get` ไป แต่ถ้าข้อมูลนั้นเป็นความลับ หรือมีปริมาณมาก ๆ ก็ส่งผ่าน `post` โดยกำหนดค่า `method` ส่วน `action` คือไฟล์ .php ที่จะให้ประมวลผลข้อมูลจาก `&lt;form&gt;` อันนี้
 
+{% highlight html %}
     <!-- Use 'get' for able to user copy url for later used -->
     <form method="get" action="bmi.php">
         <label for="height">Height (cm):</label>
@@ -31,10 +32,14 @@ author: mementototem
         <input type="password" id="password" name="password" />
         <input type="submit" id="send" name="send" value="Login" />
     </form>
+{% endhighlight %}
 
 ส่วนการนำค่ามาใช้งานนั้นจะใช้ผ่าน `$_GET` สำหรับ `get` และใช้ `$_POST` สำหรับ `post` ซึ่งเป็น [associative array](/php/array.html) มี key เป็น `name` ของ `<input>` อันนั้น ๆ 
 
 ทั้ง `$_GET` และ `$_POST` ถือเป็นตัวแปรแบบ superglobal ที่เรียกใช้ได้ทุกที่ตลอดเวลา แตกต่างจากตัวแปรแบบ global ตรงที่ไม่ต้องใส่ `global` นำก่อนจะใช้งาน
+
+{% highlight php %}
+<?php
 
     // file: bmi.php
     $height = ((int)$_GET['height']) / 100;  // Centimeter to Meter
@@ -60,6 +65,7 @@ author: mementototem
     } else {
         echo 'Invalid username or password or both';
     }
+{% endhighlight %}
 
 นอกจากนี้ยังมี `$_REQUEST` ที่เก็บค่าทั้งของ `$_POST`, `$_GET` และ `$_COOKIE` ไว้ด้วยกัน แต่เสี่ยงที่จะถูกโจมตี จึงไม่แนะนำให้ใช้ 
 

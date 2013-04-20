@@ -39,6 +39,7 @@ author: mementototem
 
 ถ้าต้องการปิดแท็กก็ใช้ `?>` แต่ถ้าไฟล์นั้นทั้งไฟล์เป็น PHP หรือ โค้ดส่วนท้ายไม่ได้มีส่วนผสมของ HTML ก็สามารถละ `?>` ปิดท้ายไฟล์ได้ การทำแบบนี้จะทำให้ไม่มีปัญหา header already sent ในกรณีมีมีวรรคหรือบรรทัดเปล่า ๆ อยู่ท้ายเอกสารได้ด้วย 
 
+{% highlight php %}
     <?php inline_function(); ?>
     <?php
         multi_line();
@@ -49,17 +50,25 @@ author: mementototem
         print_notice();
         print_copyright();
         // omit close tag 
+{% endhighlight %}
 
 ### คอมเมนต์
 
 รูปแบบการคอมเม้นต์โคดใน PHP ไม่ต่างกับภาษาอื่นมากนัก
 
+{% highlight php %}
+<?php
+
     // ใช้คอมเมนต์บรรทัดเดียว
     # ใช้คอมเมนต์บรรทัดเดียว (ไม่ค่อยนิยมสักเท่าไหร่...)
     /* ใช้คอมเมนต์แบบ
     หลายบรรทัด */
+{% endhighlight %}
 
 นอกจากนี้ยังมี PHPDoc ที่ใช้ในการอธิบายการทำงานของ Class/Function จะใช้ `/** */` การเขียน [PHPDoc](http://www.phpdoc.org/) จะช่วยให้โปรแกรม IDE สามารถดึงข้อมูลส่วนนี้ไปแสดงเวลาเรียกใช้ฟังชั่นได้ด้วย
+
+{% highlight php %}
+<?php
 
     /**
      * Print mood in Valentine's day.
@@ -71,8 +80,12 @@ author: mementototem
             echo 'Happy Happy!';
         }
     }
+{% endhighlight %}
 
 ถ้าต้องการคอมเมนต์โค้ดที่ยาว ๆ ซับซ้อน เพื่อการทดสอบการทำงาน ไม่แนะนำให้ใช้รูปแบบการคอมเมนต์แบบด้านบน แต่ให้ใช้ `if (0) { ส่วนที่ต้องการคอมเมนต์ }` แทน เพราะถ้ามีคอมเมนต์อยู่ในโค้ดก็ไม่ต้องสั่งคอมเมนต์หลาย ๆ รอบ
+
+{% highlight php %}
+<?php
 
     $love_word = 'I love you.';
     $third_hand = 'rich, gentle and handsome guy';
@@ -89,5 +102,6 @@ author: mementototem
     } // test end, if no third hand
 
     echo $love_word;
+{% endhighlight %}
 
 (ตัวอย่างไม่ซับซ้อนเท่าไหร่เลย...)
