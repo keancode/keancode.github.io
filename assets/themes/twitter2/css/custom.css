@@ -27,6 +27,36 @@ h3 {margin:0px 0 10px 0}
   margin-left:-10px; 
 }
 
+/* POST =========================================================== */
+
+.content.post table {
+  margin: 1.5em;
+  min-width: 60%;
+  width: auto;
+}
+
+.content.post table th,
+.content.post table td {
+  border: 1px solid #44adcb;
+  padding: 0.3em 0.6em;
+}
+
+.content.post table thead {
+  background: none repeat scroll 0 0 #046d8b;
+  color: #fff;
+}
+
+.content.post table tbody tr:nth-child(odd) {
+}
+
+.content.post table tbody tr:nth-child(even) {
+  background: none repeat scroll 0 0 #e8f3f8;
+}
+
+.content.post li {
+  margin: 0.3em 0;
+}
+
 /* SIDEBAR ======================================================== */ 
 .sidebar {
   max-width: 200px;
