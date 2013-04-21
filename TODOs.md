@@ -3,6 +3,7 @@ can wait
 
 - author licening
 - beautiful 404
+    - the matrix of 404 :P
 - rm -rf _post/api _post/usage (and those relate w/ JB)
 - migrate to JB 0.3.0
 - rewrite README for own site
@@ -11,7 +12,6 @@ can wait
 - create post template example for newbie
 - show author beautifuly (big pic, like wordpress?)
 - markdown problems?
-    - table doesnt render code inside -> can be fix in css
     - why link `[]()` cant accept `)` inside?
 - less requite `.js` files (merge them into single file)
     - app.js (from JB)
