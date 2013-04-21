@@ -121,7 +121,7 @@ h3.filename + pre {
   border-top-right-radius: 0px;
 }
 
-p code, li code {
+p code, li code, td code {
   display: inline-block;
   white-space: no-wrap;
   background: #fff;
