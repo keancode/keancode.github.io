@@ -14,7 +14,7 @@ author: mementototem
 
 จะส่งค่าแบบใดนั้น ขึ้นอยู่กับข้อมูลที่จะส่ง ถ้าไม่เป็นความลับ หรือต้องการให้มีการคัดลอก URL แล้วเอาไปใช้ได้โดยไม่จำเป็นต้องกรอกข้อมูลอีกก็ใช้ `get` ไป แต่ถ้าข้อมูลนั้นเป็นความลับ หรือมีปริมาณมาก ๆ ก็ส่งผ่าน `post` โดยกำหนดค่า `method` ส่วน `action` คือไฟล์ .php ที่จะให้ประมวลผลข้อมูลจาก `&lt;form&gt;` อันนี้
 
-{% highlight html %}
+```html
     <!-- Use 'get' for able to user copy url for later used -->
     <form method="get" action="bmi.php">
         <label for="height">Height (cm):</label>
@@ -39,7 +39,7 @@ author: mementototem
 ทั้ง `$_GET` และ `$_POST` ถือเป็นตัวแปรแบบ superglobal ที่เรียกใช้ได้ทุกที่ตลอดเวลา แตกต่างจากตัวแปรแบบ global ตรงที่ไม่ต้องใส่ `global` นำก่อนจะใช้งาน
 
 ```php
-<?php
+    <?php
 
     // file: bmi.php
     $height = ((int)$_GET['height']) / 100;  // Centimeter to Meter

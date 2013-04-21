@@ -54,7 +54,7 @@ author: mementototem
 ```php
     <?php
 
-    $type = (6 == $legs)? 'Insect' : 'Arachnid';
+    $type = (6 == $legs) ? 'Insect' : 'Arachnid';
 ```
 
 ---

@@ -41,15 +41,17 @@ author: mementototem
 
 ```php
     <?php inline_function(); ?>
+    
     <?php
         multi_line();
         // with comment
     ?>
+    
     <?php
         // end of file
         print_notice();
         print_copyright();
-        // omit close tag 
+        // omit close tag      
 ```
 
 ### คอมเมนต์
@@ -57,7 +59,7 @@ author: mementototem
 รูปแบบการคอมเม้นต์โคดใน PHP ไม่ต่างกับภาษาอื่นมากนัก
 
 ```php
-<?php
+    <?php
 
     // ใช้คอมเมนต์บรรทัดเดียว
     # ใช้คอมเมนต์บรรทัดเดียว (ไม่ค่อยนิยมสักเท่าไหร่...)
@@ -68,7 +70,7 @@ author: mementototem
 นอกจากนี้ยังมี PHPDoc ที่ใช้ในการอธิบายการทำงานของ Class/Function จะใช้ `/** */` การเขียน [PHPDoc](http://www.phpdoc.org/) จะช่วยให้โปรแกรม IDE สามารถดึงข้อมูลส่วนนี้ไปแสดงเวลาเรียกใช้ฟังชั่นได้ด้วย
 
 ```php
-<?php
+    <?php
 
     /**
      * Print mood in Valentine's day.
@@ -85,7 +87,7 @@ author: mementototem
 ถ้าต้องการคอมเมนต์โค้ดที่ยาว ๆ ซับซ้อน เพื่อการทดสอบการทำงาน ไม่แนะนำให้ใช้รูปแบบการคอมเมนต์แบบด้านบน แต่ให้ใช้ `if (0) { ส่วนที่ต้องการคอมเมนต์ }` แทน เพราะถ้ามีคอมเมนต์อยู่ในโค้ดก็ไม่ต้องสั่งคอมเมนต์หลาย ๆ รอบ
 
 ```php
-<?php
+    <?php
 
     $love_word = 'I love you.';
     $third_hand = 'rich, gentle and handsome guy';
