@@ -43,8 +43,12 @@ the content
     - cd -, pushd, popd
 - python
     - index.md
-        - rewrite installation w/ more information
+        - write for python3.3
+        - os x / fedora / opensuse / freebsd installation
+        - linux manual build installation
         - explicit show how to error of an `IndentationError`
+    - pypy.md
+        - see compat list here <https://wiki.ubuntu.com/Python/3>
     - tree structure like in bash (`/html/module.html`)
     - mark no newline at EOF
     - add `help` to the very 1st page
