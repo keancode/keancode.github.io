@@ -4,7 +4,6 @@ can wait
 - author licening
 - beautiful 404
     - the matrix of 404 :P
-- rm -rf _post/api _post/usage (and those relate w/ JB)
 - migrate to JB 0.3.0
 - rewrite README for own site
 - monitor out link to tt0x and replace it to inner link
@@ -33,7 +32,6 @@ the content
 - haskell
     - sample the syntax highlight
 - html
-    - tree structure like in bash (`/html/link.html`)
     - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
     - omitted some tag but good at render: `<meta ... /><h1>hello world</h1>`
@@ -53,10 +51,9 @@ the content
     - from python/lambda.html
         - move `closure` section into python/scope.html
         - move `lambda` section into python/function.html
+    - in `math` module, mark that `gcd` can be found in `fractions` module
 - php
     - tell that there is `php -a` avalable
-    - mark how to use print_r, var_dump
-    - the reasons why pure php file require only `<?php`, but not `?>`.
 - regex
     - rewrite it for full page / multi pages
 - misc
