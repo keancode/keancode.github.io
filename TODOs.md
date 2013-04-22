@@ -42,6 +42,9 @@ the content
     - change `/home/username` to `/home/me` (and also add `/home/others`)
     - cd -, pushd, popd
 - python
+    - index.md
+        - rewrite installation w/ more information
+        - explicit show how to error of an `IndentationError`
     - tree structure like in bash (`/html/module.html`)
     - mark no newline at EOF
     - add `help` to the very 1st page
