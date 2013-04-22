@@ -2,9 +2,10 @@
 layout: page
 title: Tags
 header: Posts By Tag
-group: example-page
+group: navigation
 ---
-  
+{% include JB/setup %}
+
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}  
   {% include JB/tags_list %}

@@ -4,7 +4,6 @@ can wait
 - author licening
 - beautiful 404
     - the matrix of 404 :P
-- migrate to JB 0.3.0
 - rewrite README for own site
 - monitor out link to tt0x and replace it to inner link
 - monitor dead link
