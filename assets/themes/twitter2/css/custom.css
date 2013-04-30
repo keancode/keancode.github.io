@@ -61,9 +61,16 @@ h3 {margin:0px 0 10px 0}
 
 .meta {
   border-top: 5px solid #08c;
+  margin: 3em 0 0;
+}
+
+.meta .author {
   overflow: hidden;
-  margin: 2em 0 0;
   padding: 1.25em 0;
+}
+
+.meta .author:not(:first-child) {
+  border-top: 1px solid #e5e5e5;
 }
 
 .meta a:hover {
