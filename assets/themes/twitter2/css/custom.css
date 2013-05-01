@@ -60,17 +60,19 @@ h3 {margin:0px 0 10px 0}
 /* AUTHOR META ==================================================== */
 
 .meta {
-  border-top: 5px solid #08c;
+  background: #eee;
+  border: 1px solid #e0e0e0;
   margin: 3em 0 0;
 }
 
 .meta .author {
   overflow: hidden;
+  margin: 0 1.25em;
   padding: 1.25em 0;
 }
 
 .meta .author:not(:first-child) {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #e0e0e0;
 }
 
 .meta a:hover {
@@ -79,24 +81,26 @@ h3 {margin:0px 0 10px 0}
 
 .meta .avatar {
   background: #fff;
-  border: 1px solid #08c;
+  border: 1px solid #e0e0e0;
   float: left;
-  padding: 10px;
+  padding: 7px;
 }
 
 .meta .avatar img {
   display: block;
-  height: 100px;
-  width: 100px;
-  max-width: 100px;
+  height: 64px;
+  width: 64px;
+  max-width: 64px;
 }
 
 .meta .text {
-  padding-left: 145px;
+  padding-left: 100px;
 }
 
 .meta .text .name {
-  margin: 0 0 1em;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0 0 0.5em;
 }
 
 .meta .text .desc {
