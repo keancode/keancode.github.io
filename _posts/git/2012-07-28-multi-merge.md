@@ -21,13 +21,13 @@ author: neizod
     names = sys.argv[1:]
 
     if '-h' in names:
-        exit("usage: python hello.py [-h] [NAME [NAME ...]]")
+        exit('usage: python hello.py [-h] [NAME [NAME ...]]')
         
     if not names:
-        print("Hello, world!")
+        print('Hello, world!')
 
     for name in names:
-        print("Hi {}.".format(name))
+        print('Hi {}.'.format(name))
 
 (ทดสอบแล้วผ่าน) ก็ commit ตามปรกติครับ
 
@@ -49,14 +49,14 @@ author: neizod
     names = sys.argv[1:]
 
     if not names:
-        print("Hello, world!")
+        print('Hello, world!')
 
     if '-s' in names:
         names.remove('-s')
         names.sort()
 
     for name in names:
-        print("Hi {}.".format(name))
+        print('Hi {}.'.format(name))
 
 (ทดสอบกันเอง) แล้วก็ commit ครับ
 
@@ -78,10 +78,10 @@ author: neizod
      names = sys.argv[1:]
      
     +if '-h' in names:
-    +    exit("usage: python hello.py [-h] [NAME [NAME ...]]")
+    +    exit('usage: python hello.py [-h] [NAME [NAME ...]]')
     +
      if not names:
-         print("Hello, world!")
+         print('Hello, world!')
 
 ข้อมูล 4 บรรทัดแรกจากคำสั่ง diff จะบอกว่าทำการหาความแตกต่างระหว่าง branch ไหน ข้อมูลในบรรทัดที่ 5 (ขึ้นต้นด้วยเครื่องหมาย `@@`) จะบอกช่วงบรรทัดที่นำมาแสดง และข้อมูลที่เหลือจะแสดงอยู่ในรูปของ patch file คือถ้ามีเครื่องหมาย `+` หมายถึงมีข้อมูลเพิ่มขึ้นมา เครื่องหมาย `-` คือข้อมูลที่ถูกลบทิ้งครับ
 

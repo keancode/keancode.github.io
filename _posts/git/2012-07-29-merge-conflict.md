@@ -15,9 +15,9 @@ author: neizod
 ที่ไฟล์ `hello.py` ส่วนที่เช็ค `-h` (แถวบรรทัดที่ 5) เพิ่ม code ให้เป็นอย่างนี้
 
     if '-h' in names:
-        exit("usage: python hello.py [-h] [NAME [NAME ...]]")
+        exit('usage: python hello.py [-h] [NAME [NAME ...]]')
     elif '-v' in names:
-        exit("advance hello beta")
+        exit('advance hello beta')
 
 แล้วก็ commit
 
@@ -35,9 +35,9 @@ author: neizod
 แก้ไฟล์ `hello.py` ที่เดิมเลย (แค่เปลี่ยนหน้าตา code นิดหน่อย)
 
     if '-h' in names:
-        exit("usage: python hello.py [-h] [NAME [NAME ...]]")
+        exit('usage: python hello.py [-h] [NAME [NAME ...]]')
     elif '-l' in names:
-        exit("license under WTFPL v2.0")
+        exit('license under WTFPL v2.0')
 
 เช่นเดิม commit มันซะ
 
@@ -76,24 +76,24 @@ author: neizod
     names = sys.argv[1:]
 
     if '-h' in names:
-        exit("usage: python hello.py [-h] [NAME [NAME ...]]")
+        exit('usage: python hello.py [-h] [NAME [NAME ...]]')
     <<<<<<< .merge_file_trt1cP
     elif '-v' in names:
-        exit("advance hello beta")
+        exit('advance hello beta')
     =======
     elif '-l' in names:
-        exit("license under WTFPL v2.0")
+        exit('license under WTFPL v2.0')
     >>>>>>> .merge_file_XPZY4N
 
     if not names:
-        print("Hello, world!")
+        print('Hello, world!')
 
     if '-s' in names:
         names.remove('-s')
         names.sort()
 
     for name in names:
-        print("Hi {}.".format(name))
+        print('Hi {}.'.format(name))
 
 ส่วนที่เกิด conflict จะถูกคั่นด้วยบรรทัดที่ขึ้นต้นด้วยเครื่องหมาย ` <<<<<<< `, ` ======= `, ` >>>>>>> ` ในตัวอย่างนี้ จัดการลบ 3 บรรทดนั้นทิ้งไปก็พอครับ (สำหรับงานจริง เปิดอ่านโปรแกรมแล้วจัดการเรียบเรียง code ใหม่ให้ทำงานถูกต้องนะครับ)
 
