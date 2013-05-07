@@ -9,8 +9,10 @@ can wait
 - monitor dead link
 - create post template example for newbie
 - show author beautifuly (big pic, like wordpress?)
+    - done, want some tweak? -- mementototem
 - markdown problems?
     - why link `[]()` cant accept `)` inside?
+        - it look like `can't fixed` issue XD -- mementototem
 - less requite `.js` files (merge them into single file)
     - app.js (from JB)
     - dedent.js
@@ -28,6 +30,7 @@ the content
     - write web statistic of old tt0x
 - git
     - python example -> use single quote instead of double quote
+        - i fixed it but you might checked it again -- mementototem
 - haskell
     - sample the syntax highlight
 - html
@@ -40,6 +43,7 @@ the content
     - specific `%` for root prev
     - `$SHELL` and `$TERM`
     - change `/home/username` to `/home/me` (and also add `/home/others`)
+        - username is clearer than me -- mementototem
     - cd -, pushd, popd
 - python
     - index.md
@@ -58,8 +62,6 @@ the content
         - move `closure` section into python/scope.html
         - move `lambda` section into python/function.html
     - in `math` module, mark that `gcd` can be found in `fractions` module
-- php
-    - tell that there is `php -a` avalable
 - regex
     - rewrite it for full page / multi pages
 - misc

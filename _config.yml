@@ -24,19 +24,31 @@ topbar:
 # so be sure to set them if your theme uses them.
 #
 title : KeanCode
-author :
+authors:
   neizod:
-    name : neizod
-    email : nil
-    github : neizod
-    twitter : neizod
-    feedburner : nil
+    name: neizod
+    display_name: Nattawut Phetmak
+    description: Jack of all Trades
+    gravatar: daa1cc36ed2ab0d13045d5cd2431cde9
+    email: nil
+    github: neizod
+    twitter: neizod
+    gplus:
+    aboutme:
+    feedburner: nil
+    
   mementototem:
-    name : mementototem
-    email : nil
-    github : mementototem
-    twitter : mementototem
-    feedburner : nil
+    name: mementototem
+    display_name: Apichart Nakarungutti
+    description: The Cake is a Lie
+    gravatar: 5db53ef3ec3498672a9431b0be94a69e
+    email: nil
+    github: mementototem
+    twitter: mementototem
+    gplus: 113040401332579951583
+    aboutme: mementototem
+    feedburner: nil
+    
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

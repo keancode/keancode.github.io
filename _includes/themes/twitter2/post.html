@@ -4,7 +4,10 @@
       <h1 class="title">{{ page.title }}</h1>
       {{ page.description }}
       {{ content }}
-    </div>  
+    </div>
+    
+    {% include custom/post_authors.html %}
+    
   </div>
   <div id="right-pane" class="span5">
     {% include sidebar.html %}

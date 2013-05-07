@@ -1,0 +1,59 @@
+<div class="meta">
+
+{% for post_author in page.author %}
+
+{% assign author = site.authors[post_author] %}
+
+{% if author %}
+  
+  <div class="author">
+      <div class="avatar">
+        <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=64" />
+      </div>
+      
+      <div class="text">
+      
+        <h3 class="name">
+          <a href="https://github.com/{{ author.github }}">
+            {% if author.display_name %}
+              {{ author.display_name }}
+            {% else %}
+              {{ author.name }}
+            {% endif %}
+          </a>
+        </h3>
+        
+        {% if author.description %}
+          <p class="desc">{{ author.description }}</p>
+        {% endif %}
+        
+        <p class="links">
+          {% if author.website %}
+            <span><a href="{{ author.website }}">Website</a></span>
+          {% endif %}
+          
+          {% if author.twitter %}
+            <span><a href="https://twitter.com/{{ author.twitter }}">Twitter</a></span>
+          {% endif %}
+          
+          {% if author.facebook %}
+            <span><a href="https://www.facebook.com/{{ author.facebook }}">Facebook</a></span>
+          {% endif %}
+          
+          {% if author.aboutme %}
+            <span><a href="https://about.me/{{ author.aboutme }}">About.me</a></span>
+          {% endif %}
+          
+          {% if author.gplus %}
+            <span><a href="https://plus.google.com/{{ author.gplus }}">Google+</a></span>
+          {% endif %}
+        </p>
+        
+      </div>
+  </div><!-- /.author -->
+
+{% endif %}
+
+{% endfor %}
+
+</div><!-- /.meta -->
