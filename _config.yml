@@ -11,12 +11,6 @@ redcarpet:
 
 topbar:
   - 
-    url : '/usage/index.html'
-    title : 'Start Blogging'
-  - 
-    url : '/developers/index.html'
-    title : 'Developers'
-  - 
     url : '/how-to-join/index.html'
     title : 'How to Join'
 
