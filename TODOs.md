@@ -33,6 +33,7 @@ the content
         - i fixed it but you might checked it again -- mementototem
 - haskell
     - sample the syntax highlight
+        - done, you might check it -- mementototem
 - html
     - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
