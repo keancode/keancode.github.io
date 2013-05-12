@@ -67,25 +67,25 @@ h3 {margin:0px 0 10px 0}
 }
 
 .meta .author {
-  float: right;
+  float: left;
   overflow: hidden;
   width: 30%;
   margin: 1em 0;
-  padding: 0 0 0 2.35%;
+  padding: 0 2.5% 0 0;
 }
 
 .meta .author:nth-child(3n-1) {
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
-  padding: 0 2.5%;
+  padding: 0 2.35%;
 }
 
 .meta .author:nth-child(3n) {
-  padding: 0 2.5% 0 0;
+  padding: 0 0 0 2.5%;
 }
 
 .meta .author:last-child {
-  border-left: none;
+  border-right: none;
 }
 
 .meta .avatar {
@@ -108,15 +108,19 @@ h3 {margin:0px 0 10px 0}
 .meta .text .name {
   font-size: 16px;
   line-height: normal;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.4em;
 }
 
 .meta .text .desc {
-  margin: 0 0 1em;
+  margin: 0 0 0.45em;
 }
 
-.meta .text .links span:not(:last-child):after {
-  content: " - ";
+.meta .text .links {
+  margin: 0;
+}
+
+.meta .text .links span:not(:last-child) {
+  padding-right: 0.25em;
 }
 
 .meta a:hover {

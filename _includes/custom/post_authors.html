@@ -14,7 +14,7 @@
       <div class="text">
       
         <h3 class="name">
-          <a href="https://github.com/{{ author.github }}">
+          <a href="https://github.com/{{ author.github }}" title="Me on Github">
             {% if author.display_name %}
               {{ author.display_name }}
             {% else %}
@@ -22,26 +22,40 @@
             {% endif %}
           </a>
         </h3>
+        
+        {% if author.description %}
+          <p class="desc">{{ author.description }}</p>
+        {% endif %}
 
         <p class="links">
           {% if author.website %}
-            <span><a href="{{ author.website }}">Website</a></span>
+            <span><a href="{{ author.website }}">
+              <img src="/assets/images/world.png" alt="Website" title="Visit my website" />
+            </a></span>
           {% endif %}
           
           {% if author.twitter %}
-            <span><a href="https://twitter.com/{{ author.twitter }}">Twitter</a></span>
+            <span><a href="https://twitter.com/{{ author.twitter }}" title="Follow me">
+              <img src="/assets/images/twitter.png" alt="Twitter" />
+            </a></span>
           {% endif %}
           
           {% if author.facebook %}
-            <span><a href="https://www.facebook.com/{{ author.facebook }}">Facebook</a></span>
+            <span><a href="https://www.facebook.com/{{ author.facebook }}" title="Be my friend">
+              <img src="/assets/images/facebook.png" alt="Facebook" />
+            </a></span>
           {% endif %}
           
           {% if author.aboutme %}
-            <span><a href="https://about.me/{{ author.aboutme }}">About.me</a></span>
+            <span><a href="https://about.me/{{ author.aboutme }}" title="More about.me">
+              <img src="/assets/images/aboutme.png" alt="About.me" />
+            </a></span>
           {% endif %}
           
           {% if author.gplus %}
-            <span><a href="https://plus.google.com/{{ author.gplus }}">Google+</a></span>
+            <span><a href="https://plus.google.com/{{ author.gplus }}/about" title="Add me to your cycle">
+              <img src="/assets/images/gplus.png" alt="Google+" />
+            </a></span>
           {% endif %}
         </p>
         
