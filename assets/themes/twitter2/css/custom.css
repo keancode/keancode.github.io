@@ -60,30 +60,38 @@ h3 {margin:0px 0 10px 0}
 /* AUTHOR META ==================================================== */
 
 .meta {
-  background: #eee;
-  border: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden;
+  position: relative;
   margin: 3em 0 0;
 }
 
 .meta .author {
+  float: right;
   overflow: hidden;
-  margin: 0 1.25em;
-  padding: 1.25em 0;
+  width: 30%;
+  margin: 1em 0;
+  padding: 0 0 0 2.35%;
 }
 
-.meta .author:not(:first-child) {
-  border-top: 1px solid #e0e0e0;
+.meta .author:nth-child(3n-1) {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding: 0 2.5%;
 }
 
-.meta a:hover {
-  text-decoration: none;
+.meta .author:nth-child(3n) {
+  padding: 0 2.5% 0 0;
+}
+
+.meta .author:last-child {
+  border-left: none;
 }
 
 .meta .avatar {
   background: #fff;
   border: 1px solid #e0e0e0;
   float: left;
-  padding: 7px;
 }
 
 .meta .avatar img {
@@ -94,7 +102,7 @@ h3 {margin:0px 0 10px 0}
 }
 
 .meta .text {
-  padding-left: 100px;
+  padding-left: 75px;
 }
 
 .meta .text .name {
@@ -109,6 +117,10 @@ h3 {margin:0px 0 10px 0}
 
 .meta .text .links span:not(:last-child):after {
   content: " - ";
+}
+
+.meta a:hover {
+  text-decoration: none;
 }
 
 /* SIDEBAR ======================================================== */ 
