@@ -1,14 +1,12 @@
-# Jekyll-Bootstrap
+# KeanCode
 
-The quickest and most hassle-free way to get your new Jekyll powered website up and running.
-100% compatible with GitHub pages.
-
-<http://jekyllbootstrap.com>
+KeanCode หรือชื่อเดิมคือ Tutor0x เป็นเว็บไซต์ที่สอนการเขียนโปรแกรมคอมพิวเตอร์ด้วยภาษาต่าง ๆ แบบสรุป และเน้นการเข้าใจง่ายเป็นหลัก ซึ่งสามารถเข้าดูได้จาก <http://keancode.github.io>
 
 ## Development
 
-Development is active! 
+เรากำลังโอนย้าย และปรับปรุงเนื้อหาจากเว็บไซต์เก่ามายัง Github โดยใช้ [Jekyll-Bootstrap](http://github.com/plusjade/jekyll-bootstrap)
+เป็นฐานในการพัฒนา ซึ่งทำให้สามารถแสดงผลบน [Github.io](http://pages.github.com/) ได้ทันที
 
 ## License
 
-[Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+[MIT licensed](http://www.opensource.org/licenses/MIT)
