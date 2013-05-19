@@ -1,8 +1,15 @@
 {% if site.safe and site.JB.sharing.provider and page.JB.sharing != false %}
 
 {% case site.JB.sharing.provider %}
+{% when "addthis" %}
+    {% include JB/sharing-providers/addthis %}
+    
+{% when "sharethis" %}
+    {% include JB/sharing-providers/sharethis %}
+    
 {% when "custom" %}
-  {% include custom/sharing %}
+    {% include custom/sharing %}
+    
 {% endcase %}
 
 {% endif %}

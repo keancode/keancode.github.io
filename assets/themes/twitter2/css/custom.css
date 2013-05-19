@@ -29,6 +29,9 @@ h3 {margin:0px 0 10px 0}
 
 /* POST =========================================================== */
 
+.content {
+    margin-bottom: 2em;
+}
 .content.post table {
   margin: 1.5em;
   min-width: 60%;
@@ -63,7 +66,7 @@ h3 {margin:0px 0 10px 0}
   border-top: 1px solid #e0e0e0;
   overflow: hidden;
   position: relative;
-  margin: 3em 0 0;
+  margin: 1em 0 0;
 }
 
 .meta .author {
@@ -125,6 +128,13 @@ h3 {margin:0px 0 10px 0}
 
 .meta a:hover {
   text-decoration: none;
+}
+
+/* SHARING PROVIDER =============================================== */
+
+.addthis_floating_style {
+    left: 10px;
+    top: 63px;
 }
 
 /* SIDEBAR ======================================================== */ 
