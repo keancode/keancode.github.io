@@ -7,18 +7,22 @@ author: neizod
 
 คอมเมนท์ใน Visual Basic ใช้เครื่องหมาย `'` (apostrophe) นำหน้าบรรทัดนั้นๆ
 
+```vb.net
     ' This is a comment line.
     Dim text As String  ' This too...
     text = "But this's not!"
+```
 
 ---
 
 เนื่องจาก code ในภาษานี้มักจะยาว (มาก) ดังนั้นผมจะยก code มาบางส่วนเท่านั้น สำหรับส่วนที่เข้าใจตรงกันหรือไม่ได้เปลี่ยน code จากเดิมจะแทนด้วย `...` เช่น จากโปรแกรมสวัสดีชาวโลกในตอนที่แล้ว จะยกมาแสดงแค่นี้
 
+```vb.net
     Private Sub Button1_Click(...) Handles Button1.Click
         MessageBox.Show("Hello World.")
      
     End Sub
+```
 
 อนึ่ง ในกรณีที่ code ยาวมากๆ จนเราอยากตัดไปขึ้นบรรทัดใหม่ ให้ใช้ `_` (underscore) วางไว้ตรงท้ายบรรทัดนะครับ ไม่งั้นโปรแกรมจะคิดว่าเป็นคนละบรรทัดกัน
 
@@ -30,6 +34,7 @@ author: neizod
 
 เนื่องจากโปรแกรม Visual Studio เป็น [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment) เมื่อเราพิมพ์ code ไปบางส่วนจะมี auto-complete มาให้ เราสามารถกด `[Ctrl]+[Spacebar]` เพื่อให้แสดงรายการตัวเลือกที่มีได้ เช่น
 
+```vb.net
     messa
     ' press [Ctrl]+[Spacebar]
 
@@ -39,6 +44,7 @@ author: neizod
     ' press [Ctrl]+[Spacebar]
 
     MessageBox.Show
+```
 
 อนึ่ง เมื่อเราพิมพ์ผิด จะมีเส้นสีแดงหยักๆ ขีดใต้คำที่ผิดให้ ก็ตามไปแก้ให้ถูกต้องด้วยนะครับ
 

@@ -84,6 +84,52 @@ author: neizod
 
 สังเกตว่าถ้าไม่ผ่าน argument เป็นชื่อ directory เข้าไป มันจะพาเรากลับ directory ส่วนตัวครับ
 
+แต่หากจะย้อนกลับไป directory ก่อนหน้าที่จะเปลี่ยนไปยังที่ใหม่ สามารถใช้พารามิเตอร์ `-` ของ cd เพื่อสลับ directory สองอันไปมาได้
+
+    $ pwd
+    /home/username
+    $ cd /etc
+    $ pwd
+    /etc
+    $ cd -
+    /home/username
+    $ cd -
+    /etc
+    $ cd -
+    /home/username
+
+นอกจากการเปลี่ยน directory ด้วย `cd` แล้วยังสามารถใช้ `pushd` ในการเปลี่ยน directory ได้ด้วย แต่คำสั่งนี้จะเก็บ directory ปัจจุบันเอาไว้
+แล้วดึงกลับมาได้ด้วย `popd` โดย 2 คำสั่งนี้จะเก็บรายชื่อ directory ในรูปแบบ stack ซึ่งใช้กฎ Last-In, First-Out (LIFO)
+
+    $ pwd
+    /home/username
+    $ pushd /etc
+    /etc ~          # first item is current directory
+    $ pwd
+    /etc
+    $ pushd /bin
+    /bin /etc ~
+    $ pwd
+    /bin
+    $ popd
+    /etc ~
+    $ pwd
+    /etc
+    $ pushd /usr
+    /usr /etc ~
+    $ pwd
+    /user
+    $ popd
+    /etc ~
+    $ pwd
+    /etc
+    $ popd
+    ~
+    $ pwd
+    /home/username
+    $ popd
+    -bash: popd: directory stack empty
+    
 ส่วนการสร้าง/ลบ directory ได้โดยคำสั่ง `mkdir` และ `rmdir`
 
     $ mkdir Test

@@ -33,11 +33,13 @@ the content
         - i fixed it but you might checked it again -- mementototem
 - haskell
     - sample the syntax highlight
+        - done, you might check it -- mementototem
 - html
     - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
     - omitted some tag but good at render: `<meta ... /><h1>hello world</h1>`
     - update those to use some modern tag: `<em>, <strong>, <span>`
+    - after I reviewed and fixed some (I can't find all issues), everything look good for me -- mementototem
 - bash
     - write something about posix
     - specific `%` for root prev

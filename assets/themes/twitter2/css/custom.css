@@ -29,6 +29,9 @@ h3 {margin:0px 0 10px 0}
 
 /* POST =========================================================== */
 
+.content {
+    margin-bottom: 2em;
+}
 .content.post table {
   margin: 1.5em;
   min-width: 60%;
@@ -60,30 +63,38 @@ h3 {margin:0px 0 10px 0}
 /* AUTHOR META ==================================================== */
 
 .meta {
-  background: #eee;
-  border: 1px solid #e0e0e0;
-  margin: 3em 0 0;
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden;
+  position: relative;
+  margin: 1em 0 0;
 }
 
 .meta .author {
+  float: left;
   overflow: hidden;
-  margin: 0 1.25em;
-  padding: 1.25em 0;
+  width: 30%;
+  margin: 1em 0;
+  padding: 0 2.5% 0 0;
 }
 
-.meta .author:not(:first-child) {
-  border-top: 1px solid #e0e0e0;
+.meta .author:nth-child(3n-1) {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding: 0 2.35%;
 }
 
-.meta a:hover {
-  text-decoration: none;
+.meta .author:nth-child(3n) {
+  padding: 0 0 0 2.5%;
+}
+
+.meta .author:last-child {
+  border-right: none;
 }
 
 .meta .avatar {
   background: #fff;
   border: 1px solid #e0e0e0;
   float: left;
-  padding: 7px;
 }
 
 .meta .avatar img {
@@ -94,21 +105,36 @@ h3 {margin:0px 0 10px 0}
 }
 
 .meta .text {
-  padding-left: 100px;
+  padding-left: 75px;
 }
 
 .meta .text .name {
   font-size: 16px;
   line-height: normal;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.4em;
 }
 
 .meta .text .desc {
-  margin: 0 0 1em;
+  margin: 0 0 0.45em;
 }
 
-.meta .text .links span:not(:last-child):after {
-  content: " - ";
+.meta .text .links {
+  margin: 0;
+}
+
+.meta .text .links span:not(:last-child) {
+  padding-right: 0.25em;
+}
+
+.meta a:hover {
+  text-decoration: none;
+}
+
+/* SHARING PROVIDER =============================================== */
+
+.addthis_floating_style {
+    left: 10px;
+    top: 63px;
 }
 
 /* SIDEBAR ======================================================== */ 

@@ -27,6 +27,7 @@ author: neizod
 
 ด้านนามสกุลไฟล์นอกจาก `.hs` แล้ว ก็มี `.lhs` ซึ่งเป็นไฟล์ที่เน้นการเขียนโปรแกรมแบบเอกสาร แล้วแทรก code ตามจุดต่างๆ ([literate programming](http://en.wikipedia.org/wiki/Literate_programming)) ตัวอย่างก็เช่น
 
+```haskell
     Hello World Program
     ===================
 
@@ -34,9 +35,16 @@ author: neizod
 
     > main = do
     >     putStrLn "Hello, world!"
+```
 
 โปรแกรมนี้จะแสดงผลลัพท์เช่นเดียวกับตอนที่แล้ว อย่างไรก็ตามส่วนที่อธิบายโปรแกรมนั้น ไม่ได้ส่งผลให้เกิดความแตกต่างของ binary code แต่อย่างใด
 
 ส่วนการ comment source ใน Haskell แบบบรรทัดเดียวใช้ `--` เพื่อ comment ข้อความจนจบบรรทัด และแบบหลายบรรทัดใช้ `{-` กับ `-}` ครอบส่วนที่ต้องการ comment
 
-ในที่นี้จะไม่ใช้ comment ให้ดู เนื่องจากตัว syntax highlighter ไม่ระบายสีให้ครับ :P
+```haskell
+    -- single line comment
+    
+    {- multi
+    lines
+    comment -}
+```
