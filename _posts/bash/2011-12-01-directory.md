@@ -1,7 +1,7 @@
 ---
 layout: post
 category: bash
-author: neizod
+author: [ neizod, mementototem ]
 ---
 {% include JB/setup %}
 
@@ -130,6 +130,8 @@ author: neizod
     $ popd
     -bash: popd: directory stack empty
     
+---
+
 ส่วนการสร้าง/ลบ directory ได้โดยคำสั่ง `mkdir` และ `rmdir`
 
     $ mkdir Test
