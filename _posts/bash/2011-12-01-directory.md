@@ -1,7 +1,7 @@
 ---
 layout: post
 category: bash
-author: [ neizod, mementototem ]
+author: [neizod, mementototem]
 ---
 {% include JB/setup %}
 
