@@ -18,24 +18,44 @@
 
 {% when "vertical_counter" %}
 
-    <div class="addthis_toolbox addthis_floating_style addthis_counter_style">
+    <div class="addthis_toolbox addthis_float_box addthis_floating_style addthis_counter_style">
         <a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
         <a class="addthis_button_tweet" tw:count="vertical"></a>
         <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
         <a class="addthis_counter"></a>
     </div>
+    
+    <div class="addthis_toolbox addthis_normal_box addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_pinterest_pinit"></a>
+        <a class="addthis_counter addthis_pill_style"></a>
+    </div>
 
 {% else %}
 
-    <div class="addthis_toolbox addthis_default_style
+    {% if site.JB.sharing.addthis.float %}
+        <div class="addthis_toolbox addthis_float_box addthis_default_style addthis_floating_style
+        {% if site.JB.sharing.addthis.style == "big_bubble" %}
+            addthis_32x32_style
+        {% else %}
+            addthis_16x16_style
+        {% endif %}
+        ">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+    {% endif %}
+    
+    <div class="addthis_toolbox addthis_normal_box addthis_default_style
     {% if site.JB.sharing.addthis.style == "big_bubble" %}
         addthis_32x32_style
     {% else %}
         addthis_16x16_style
-    {% endif %}
-    
-    {% if site.JB.sharing.addthis.float %}
-         addthis_floating_style
     {% endif %}
     ">
         <a class="addthis_button_preferred_1"></a>
@@ -48,7 +68,7 @@
     
 {% endcase %}
 
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.JB.sharing.addthis.pubid }}"></script>
 
 <!-- AddThis Button END -->
