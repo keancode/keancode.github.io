@@ -142,7 +142,7 @@ JB :
     provider : addthis
     addthis :
         pubid : xa-5198b55b03192f96
-        float : false
+        float : true
         style : big_bubble    # pill, single, bubble (floatable), big_bubble (floatable), vertical_counter (always float)
 
   # Settings for all other include helpers can be defined by creating 
