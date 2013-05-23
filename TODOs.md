@@ -17,29 +17,22 @@ the content
     - never write `{{ ... }}` (double brace), use `{ { ... } }` otherwise.
         (conflict w/ liquid template).
     - write how to dev w/ jekyll & liquid template
+- git
+    - rebuild entry `hello` project for correct date and hash-ref (can be wait)
 - annoc
     - landing page
     - write migrate blog
     - write web statistic of old tt0x
-- git
-    - python example -> use single quote instead of double quote
-        - i fixed it but you might checked it again -- mementototem
-- haskell
-    - sample the syntax highlight
-        - done, you might check it -- mementototem
 - html
     - one tag need one space before end (xhtml spec): `<div />`
     - indent = 2 space to keep spaces
     - omitted some tag but good at render: `<meta ... /><h1>hello world</h1>`
-    - update those to use some modern tag: `<em>, <strong>, <span>`
-    - after I reviewed and fixed some (I can't find all issues), everything look good for me -- mementototem
 - bash
     - write something about posix
     - specific `%` for root prev
     - `$SHELL` and `$TERM`
     - change `/home/username` to `/home/me` (and also add `/home/others`)
         - username is clearer than me -- mementototem
-    - cd -, pushd, popd
 - python
     - index.md
         - write for python3.3
