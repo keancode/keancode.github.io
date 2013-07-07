@@ -1,4 +1,5 @@
 ---
+title: การควบคุมการทำงาน
 layout: post
 category: php
 author: mementototem

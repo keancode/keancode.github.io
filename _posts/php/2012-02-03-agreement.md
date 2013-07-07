@@ -1,4 +1,5 @@
 ---
+title: มาตกลงกันก่อน
 layout: post
 category: php
 author: mementototem

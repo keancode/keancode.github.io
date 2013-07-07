@@ -1,4 +1,5 @@
 ---
+title: การรับข้อมูลจากผู้ใช้
 layout: post
 category: php
 author: mementototem
