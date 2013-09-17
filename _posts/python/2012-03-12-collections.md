@@ -7,7 +7,7 @@ author: neizod
 
 นอกจาก list, dictionary, tuple และ set แล้ว ยังมีโครงสร้างข้อมูลชุดแบบอื่นๆ เช่น
 
-deque ที่ทำความเร็วได้ดีกว่าการใช้ `list.append(elem)` และ `list.pop(0)` สร้าง[คิว](http://en.wikipedia.org/wiki/Queue_(data_structure))เอง
+deque ที่ทำความเร็วได้ดีกว่าการใช้ `list.append(elem)` และ `list.pop(0)` สร้าง[คิว](http://en.wikipedia.org/wiki/Queue_(data_structure\))เอง
 
 ```python
     from collections import deque
