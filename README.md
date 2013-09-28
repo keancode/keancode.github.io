@@ -9,4 +9,5 @@ KeanCode หรือชื่อเดิมคือ Tutor0x เป็นเ�
 
 ## License
 
-[MIT licensed](http://www.opensource.org/licenses/MIT)
+- ตัวบทความ ใช้สํญญาอนุญาตแบบ [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+- เอนจินและธีม ใช้สัญญาอนุญาติแบบ [MIT](http://www.opensource.org/licenses/MIT)

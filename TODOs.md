@@ -1,7 +1,6 @@
 can wait
 --------
 
-- author licening
 - beautiful 404
     - the matrix of 404 :P
 - rewrite README for own site
