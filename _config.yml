@@ -109,7 +109,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : keancode
     livefyre :
       site_id : 123
     intensedebate :
