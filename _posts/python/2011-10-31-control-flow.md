@@ -90,7 +90,7 @@ author: neizod
     # and loop overflow (without print loop success)
     for i in range(50):
         print(i)
-        if n > 32:
+        if i > 32:
             print('loop overflow')
             break
     else:
