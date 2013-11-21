@@ -7,9 +7,11 @@ author: neizod
 
 ตอนก่อนเราได้สวัสดีชาวโลกกันไปแล้ว แต่จะเห็นว่าไวยากรณ์ผิดพลาดอยู่บ้าง ลองแก้ไฟล์ `hello.py` เป็น
 
+```python
     print('Hello, world!')
+```
 
-พร้อมกับเขียนไฟล์ใหม่ชื่อ `README.md` เพื่อบอกข้อมูลพื้นฐานของโปรแกรมนี้ โดยมีเนื้อหาว่า
+พร้อมกับเขียนไฟล์ใหม่ชื่อ `README.md` เพื่อบอกข้อมูลพื้นฐานของโปรแกรมนี้ โดยมีเนื้อหาว่า 
 
     Yet Another Hello World Program
     ===============================
@@ -24,6 +26,7 @@ author: neizod
 
 ลองเช็คสถานะของโปรเจคนี้ดู จะได้ผลลัพท์ดังนี้
 
+```sh
     $ git status
     # On branch master
     # Changes not staged for commit:
@@ -38,15 +41,19 @@ author: neizod
     # MANUAL.md
     # README.md
     no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 ซึ่งบอกว่า ทั้งไฟล์ `hello.py` ที่เพิ่งแก้ไขไป และไฟล์ `MANUAL.md`, `README.md` ที่เพิ่มมาใหม่นั้น จะไม่ถูกจำสำหรับการ commit ในครั้งถัดไป
 
 ดังนั้น เราต้องเพิ่มไฟล์ทั้งสองเข้าไปในระบบก่อน โดยสั่ง add เหมือนตอนที่แล้วครับ
 
+```sh
     $ git add hello.py MANUAL.md README.md
+```
 
 เช็คสถานะไฟล์อีกครั้ง
 
+```sh
     $ git status
     # On branch master
     # Changes to be committed:
@@ -56,14 +63,17 @@ author: neizod
     # new file:   README.md
     # modified:   hello.py
     #
+```
 
 พร้อมแล้วก็สั่ง commit เลยครับ
 
+```sh
     $ git commit -m 'init project'
     [master d918f10] init project
      3 files changed, 9 insertions(+), 1 deletion(-)
      create mode 100644 MANUAL.md
      create mode 100644 README.md
+```
 
 ---
 
@@ -80,14 +90,18 @@ author: neizod
 
 ถึงตอนนี้ เราจะไม่ต้องการไฟล์ `MANUAL.md` แล้ว ก็สั่งลบไฟล์ออกจากระบบโดย
 
+```sh
     $ git rm MANUAL.md
+```
 
 จะเห็นว่าไฟล์ `MANUAL.md` หายไปจากไดเรคทอรี่เป็นที่เรียบร้อย ตอนนี้ก็ได้เวลาสั่ง commit งานที่เพิ่งแก้ไขกันครับ
 
+```sh
     $ git add README.md
     $ git commit -m 'improve README'
     [master b2b0e96] improve READMEไฟล์
      2 files changed, 5 insertions(+), 4 deletions(-)
      delete mode 100644 MANUAL.md
+```
 
 อย่าลืมว่าก่อน commit ต้อง add ไฟล์ที่ถูกแก้ไขทุกครั้งนะครับ
