@@ -5,9 +5,7 @@ permalink: /:categories/:title.html
 exclude: [".rbenv-version", "README.md", "Rakefile", "CNAME", "TODOs.md"]
 auto: true
 pygments: true
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+markdown: kramdown
 
 topbar:
   - 
